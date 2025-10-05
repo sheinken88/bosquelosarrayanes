@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Início",
+    "tour": "O Tour",
+    "pricing": "Tarifas",
+    "gallery": "Galeria",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Descubra uma Floresta Única no Mundo",
+    "subtitle": "Navegue pelo Lago Nahuel Huapi até a mágica Floresta de Arrayanes a bordo do Catamarã Futaleufú",
+    "cta": "Reservar Tour"
+  },
+  "forest": {
+    "title": "A Floresta de Arrayanes",
+    "subtitle": "Um Tesouro Natural que Existe em Muito Poucos Lugares do Planeta",
+    "description": "A Floresta de Arrayanes é um ecossistema único onde as árvores arrayán (Luma apiculata) crescem até se tornarem árvores de mais de 15 metros de altura. Sua casca cor de canela e folhagem perene criam uma paisagem de sonho que inspirou a animação de Bambi da Walt Disney.",
+    "feature1": "Árvores centenárias de até 600 anos",
+    "feature2": "Casca única cor de canela",
+    "feature3": "Ecossistema protegido como Monumento Natural",
+    "feature4": "Flora e fauna endêmica da região"
+  },
+  "catamaran": {
+    "title": "Catamarã Futaleufú",
+    "subtitle": "Conforto e Segurança na Sua Travessia",
+    "description": "Nosso moderno catamarã oferece a melhor experiência para percorrer o lago Nahuel Huapi. Com amplos espaços, decks panorâmicos e todas as medidas de segurança, sua viagem será tão memorável quanto o destino.",
+    "capacity": "Capacidade para 150 passageiros",
+    "comfort": "Salões climatizados e decks ao ar livre",
+    "safety": "Certificações de segurança vigentes",
+    "crew": "Tripulação experiente e guias especializados"
+  },
+  "tour": {
+    "title": "A Experiência do Tour",
+    "subtitle": "Um Dia Completo de Natureza e Aventura",
+    "duration": "Duração",
+    "durationValue": "4 horas (ida e volta)",
+    "departure": "Saída",
+    "departureValue": "Do Porto de Villa La Angostura",
+    "included": "Inclui",
+    "includedItems": [
+      "Viagem de catamarã pelo lago Nahuel Huapi",
+      "Tempo de exploração na Floresta de Arrayanes",
+      "Guia especializado durante o percurso",
+      "Vistas panorâmicas das montanhas e do lago"
+    ],
+    "schedule": "Horários de saída",
+    "scheduleInfo": "Consultar disponibilidade segundo temporada"
+  },
+  "pricing": {
+    "title": "Tarifas",
+    "subtitle": "Escolha Sua Excursão",
+    "general": "Geral",
+    "children": "Crianças (4-12 anos)",
+    "infants": "Menores de 4 anos",
+    "infantsPrice": "Grátis",
+    "seniors": "Maiores de 65 anos",
+    "groups": "Grupos (mais de 10 pessoas)",
+    "groupsInfo": "Consultar tarifas especiais",
+    "note": "As tarifas estão sujeitas a mudanças segundo temporada. Consultar por disponibilidade.",
+    "bookNow": "Reservar Agora"
+  },
+  "gallery": {
+    "title": "Galeria",
+    "subtitle": "Descubra a Beleza da Floresta de Arrayanes"
+  },
+  "video": {
+    "title": "Viva a Experiência",
+    "subtitle": "Uma Jornada Visual pelo Nosso Tour"
+  },
+  "testimonials": {
+    "title": "O Que Dizem Nossos Visitantes",
+    "subtitle": "Experiências Autênticas de Quem Já Conheceu a Floresta"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "q1": "Quanto tempo dura o tour completo?",
+    "a1": "O tour completo tem uma duração aproximada de 4 horas, incluindo a viagem de catamarã e o tempo de exploração na Floresta de Arrayanes.",
+    "q2": "O que devo levar?",
+    "a2": "Recomendamos roupa confortável, calçado apropriado para caminhar, protetor solar, chapéu e câmera fotográfica. No inverno, levar agasalho adequado.",
+    "q3": "O tour acontece com chuva?",
+    "a3": "Sim, o tour acontece em qualquer condição climática, exceto em casos de tempestade severa por razões de segurança. O catamarã tem espaços cobertos.",
+    "q4": "Há descontos para grupos?",
+    "a4": "Sim, oferecemos tarifas especiais para grupos de mais de 10 pessoas. Entre em contato para mais informações.",
+    "q5": "Pode-se comprar comida a bordo?",
+    "a5": "O catamarã tem um bar onde se podem comprar bebidas e lanches durante a viagem.",
+    "q6": "É acessível para pessoas com mobilidade reduzida?",
+    "a6": "O catamarã tem facilidades para pessoas com mobilidade reduzida. Por favor, notifique-nos com antecedência para garantir a melhor assistência."
+  },
+  "contact": {
+    "title": "Reserve Sua Aventura",
+    "subtitle": "Entre em contato para reservar seu lugar ou consultar disponibilidade",
+    "name": "Nome completo",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "date": "Data desejada",
+    "people": "Quantidade de pessoas",
+    "message": "Mensagem",
+    "submit": "Enviar Consulta",
+    "info": "Informações de Contato",
+    "address": "Villa La Angostura, Neuquén, Argentina",
+    "hours": "Horários de atendimento: Segunda a Domingo"
+  },
+  "footer": {
+    "about": "Sobre Nós",
+    "aboutText": "Mais de 30 anos navegando o Nahuel Huapi e levando visitantes à mágica Floresta de Arrayanes.",
+    "quickLinks": "Links Rápidos",
+    "followUs": "Siga-nos",
+    "rights": "Todos os direitos reservados"
+  },
+  "meta": {
+    "title": "Floresta de Arrayanes - Tour de Catamarã | Villa La Angostura",
+    "description": "Descubra a única Floresta de Arrayanes do mundo. Tour de catamarã desde Villa La Angostura pelo lago Nahuel Huapi. Reserve sua excursão agora."
+  }
+}

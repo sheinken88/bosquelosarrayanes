@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Home",
+    "tour": "The Tour",
+    "pricing": "Pricing",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Discover a Forest That Exists Nowhere Else on Earth",
+    "subtitle": "Navigate Lake Nahuel Huapi to the magical Arrayanes Forest aboard the Futaleufú Catamaran",
+    "cta": "Book Tour"
+  },
+  "forest": {
+    "title": "The Arrayanes Forest",
+    "subtitle": "A Natural Treasure Found in Very Few Places on the Planet",
+    "description": "The Arrayanes Forest is a unique ecosystem where arrayán trees (Luma apiculata) grow to become trees over 15 meters tall. Their cinnamon-colored bark and evergreen foliage create a dreamlike landscape that inspired Walt Disney's Bambi animation.",
+    "feature1": "Centennial trees up to 600 years old",
+    "feature2": "Unique cinnamon-colored bark",
+    "feature3": "Protected ecosystem as a Natural Monument",
+    "feature4": "Endemic flora and fauna of the region"
+  },
+  "catamaran": {
+    "title": "Futaleufú Catamaran",
+    "subtitle": "Comfort and Safety on Your Journey",
+    "description": "Our modern catamaran offers you the best experience to explore Lake Nahuel Huapi. With spacious areas, panoramic decks, and all safety measures, your journey will be as memorable as the destination.",
+    "capacity": "Capacity for 150 passengers",
+    "comfort": "Climate-controlled lounges and outdoor decks",
+    "safety": "Current safety certifications",
+    "crew": "Experienced crew and specialized guides"
+  },
+  "tour": {
+    "title": "The Tour Experience",
+    "subtitle": "A Full Day of Nature and Adventure",
+    "duration": "Duration",
+    "durationValue": "4 hours (round trip)",
+    "departure": "Departure",
+    "departureValue": "From Villa La Angostura Port",
+    "included": "Includes",
+    "includedItems": [
+      "Catamaran trip across Lake Nahuel Huapi",
+      "Exploration time in the Arrayanes Forest",
+      "Specialized guide during the tour",
+      "Panoramic views of the mountains and lake"
+    ],
+    "schedule": "Departure times",
+    "scheduleInfo": "Check availability by season"
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Choose Your Excursion",
+    "general": "General",
+    "children": "Children (4-12 years)",
+    "infants": "Under 4 years",
+    "infantsPrice": "Free",
+    "seniors": "Seniors (65+)",
+    "groups": "Groups (10+ people)",
+    "groupsInfo": "Inquire for special rates",
+    "note": "Prices are subject to change by season. Check availability.",
+    "bookNow": "Book Now"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Discover the Beauty of the Arrayanes Forest"
+  },
+  "video": {
+    "title": "Live the Experience",
+    "subtitle": "A Visual Journey Through Our Tour"
+  },
+  "testimonials": {
+    "title": "What Our Visitors Say",
+    "subtitle": "Authentic Experiences from Those Who've Already Visited the Forest"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How long is the complete tour?",
+    "a1": "The complete tour takes approximately 4 hours, including the catamaran trip and exploration time in the Arrayanes Forest.",
+    "q2": "What should I bring?",
+    "a2": "We recommend comfortable clothing, appropriate walking shoes, sunscreen, hat, and camera. In winter, bring adequate warm clothing.",
+    "q3": "Does the tour operate in the rain?",
+    "a3": "Yes, the tour operates in all weather conditions, except in cases of severe storms for safety reasons. The catamaran has covered spaces.",
+    "q4": "Are there group discounts?",
+    "a4": "Yes, we offer special rates for groups of more than 10 people. Contact us for more information.",
+    "q5": "Can food be purchased on board?",
+    "a5": "The catamaran has a bar where you can purchase drinks and snacks during the trip.",
+    "q6": "Is it accessible for people with reduced mobility?",
+    "a6": "The catamaran has facilities for people with reduced mobility. Please notify us in advance to ensure the best assistance."
+  },
+  "contact": {
+    "title": "Book Your Adventure",
+    "subtitle": "Contact us to reserve your spot or check availability",
+    "name": "Full name",
+    "email": "Email",
+    "phone": "Phone",
+    "date": "Desired date",
+    "people": "Number of people",
+    "message": "Message",
+    "submit": "Send Inquiry",
+    "info": "Contact Information",
+    "address": "Villa La Angostura, Neuquén, Argentina",
+    "hours": "Office hours: Monday to Sunday"
+  },
+  "footer": {
+    "about": "About Us",
+    "aboutText": "Over 30 years navigating Nahuel Huapi and taking visitors to the magical Arrayanes Forest.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved"
+  },
+  "meta": {
+    "title": "Arrayanes Forest - Catamaran Tour | Villa La Angostura",
+    "description": "Discover the world's only Arrayanes Forest. Catamaran tour from Villa La Angostura across Lake Nahuel Huapi. Book your excursion now."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "tour": "El Tour",
+    "pricing": "Tarifas",
+    "gallery": "Galería",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Descubre un Bosque Único en el Mundo",
+    "subtitle": "Navega por el Lago Nahuel Huapi hacia el mágico Bosque de Arrayanes a bordo del Catamarán Futaleufú",
+    "cta": "Reservar Tour"
+  },
+  "forest": {
+    "title": "El Bosque de Arrayanes",
+    "subtitle": "Un Tesoro Natural que Existe en Muy Pocos Lugares del Planeta",
+    "description": "El Bosque de Arrayanes es un ecosistema único donde los arrayanes (Luma apiculata) crecen hasta convertirse en árboles de más de 15 metros de altura. Su corteza de color canela y su follaje perenne crean un paisaje de ensueño que inspiró la animación de Bambi de Walt Disney.",
+    "feature1": "Árboles centenarios de hasta 600 años",
+    "feature2": "Corteza única de color canela",
+    "feature3": "Ecosistema protegido como Monumento Natural",
+    "feature4": "Flora y fauna endémica de la región"
+  },
+  "catamaran": {
+    "title": "Catamarán Futaleufú",
+    "subtitle": "Comodidad y Seguridad en Tu Travesía",
+    "description": "Nuestro moderno catamarán te ofrece la mejor experiencia para recorrer el lago Nahuel Huapi. Con amplios espacios, cubiertas panorámicas y todas las medidas de seguridad, tu viaje será tan memorable como el destino.",
+    "capacity": "Capacidad para 150 pasajeros",
+    "comfort": "Salones climatizados y cubiertas al aire libre",
+    "safety": "Certificaciones de seguridad vigentes",
+    "crew": "Tripulación experimentada y guías especializados"
+  },
+  "tour": {
+    "title": "La Experiencia del Tour",
+    "subtitle": "Un Día Completo de Naturaleza y Aventura",
+    "duration": "Duración",
+    "durationValue": "4 horas (ida y vuelta)",
+    "departure": "Salida",
+    "departureValue": "Desde Puerto de Villa La Angostura",
+    "included": "Incluye",
+    "includedItems": [
+      "Viaje en catamarán por el lago Nahuel Huapi",
+      "Tiempo de exploración en el Bosque de Arrayanes",
+      "Guía especializado durante el recorrido",
+      "Vistas panorámicas de las montañas y el lago"
+    ],
+    "schedule": "Horarios de salida",
+    "scheduleInfo": "Consultar disponibilidad según temporada"
+  },
+  "pricing": {
+    "title": "Tarifas",
+    "subtitle": "Elige Tu Excursión",
+    "general": "General",
+    "children": "Niños (4-12 años)",
+    "infants": "Menores de 4 años",
+    "infantsPrice": "Gratis",
+    "seniors": "Mayores de 65 años",
+    "groups": "Grupos (más de 10 personas)",
+    "groupsInfo": "Consultar tarifas especiales",
+    "note": "Las tarifas están sujetas a cambios según temporada. Consultar por disponibilidad.",
+    "bookNow": "Reservar Ahora"
+  },
+  "gallery": {
+    "title": "Galería",
+    "subtitle": "Descubre la Belleza del Bosque de Arrayanes"
+  },
+  "video": {
+    "title": "Vive la Experiencia",
+    "subtitle": "Un Recorrido Visual por Nuestro Tour"
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Nuestros Visitantes",
+    "subtitle": "Experiencias Auténticas de Quienes Ya Conocieron el Bosque"
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "q1": "¿Cuánto dura el tour completo?",
+    "a1": "El tour completo tiene una duración aproximada de 4 horas, incluyendo el viaje en catamarán y el tiempo de exploración en el Bosque de Arrayanes.",
+    "q2": "¿Qué debo llevar?",
+    "a2": "Recomendamos ropa cómoda, calzado apropiado para caminar, protector solar, gorra, y cámara fotográfica. En invierno, llevar abrigo adecuado.",
+    "q3": "¿El tour se realiza con lluvia?",
+    "a3": "Sí, el tour se realiza bajo cualquier condición climática, excepto en casos de tormenta severa por razones de seguridad. El catamarán cuenta con espacios cubiertos.",
+    "q4": "¿Hay descuentos para grupos?",
+    "a4": "Sí, ofrecemos tarifas especiales para grupos de más de 10 personas. Contáctanos para más información.",
+    "q5": "¿Se puede comprar comida a bordo?",
+    "a5": "El catamarán cuenta con un bar donde se pueden adquirir bebidas y snacks durante el viaje.",
+    "q6": "¿Es accesible para personas con movilidad reducida?",
+    "a6": "El catamarán cuenta con facilidades para personas con movilidad reducida. Por favor, notifícanos con anticipación para asegurar la mejor asistencia."
+  },
+  "contact": {
+    "title": "Reserva Tu Aventura",
+    "subtitle": "Contáctanos para reservar tu lugar o consultar disponibilidad",
+    "name": "Nombre completo",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "date": "Fecha deseada",
+    "people": "Cantidad de personas",
+    "message": "Mensaje",
+    "submit": "Enviar Consulta",
+    "info": "Información de Contacto",
+    "address": "Villa La Angostura, Neuquén, Argentina",
+    "hours": "Horarios de atención: Lunes a Domingo"
+  },
+  "footer": {
+    "about": "Sobre Nosotros",
+    "aboutText": "Más de 30 años navegando el Nahuel Huapi y llevando visitantes al mágico Bosque de Arrayanes.",
+    "quickLinks": "Enlaces Rápidos",
+    "followUs": "Síguenos",
+    "rights": "Todos los derechos reservados"
+  },
+  "meta": {
+    "title": "Bosque de Arrayanes - Tour en Catamarán | Villa La Angostura",
+    "description": "Descubre el único Bosque de Arrayanes en el mundo. Tour en catamarán desde Villa La Angostura por el lago Nahuel Huapi. Reserva tu excursión ahora."
+  }
+}
