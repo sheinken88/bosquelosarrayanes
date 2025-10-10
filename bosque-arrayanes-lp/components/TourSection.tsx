@@ -8,59 +8,61 @@ export default function TourSection() {
   const includedItems = [0, 1, 2, 3].map((i) => t(`includedItems.${i}`));
 
   return (
-    <section id="tour" className="py-20 bg-[var(--cream)]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="tour" className="py-24 bg-[var(--cream)] relative overflow-hidden">
+      {/* Subtle misty atmosphere effect */}
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-[var(--sage-mist)]/10 to-transparent pointer-events-none" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-[var(--forest-dark)] mb-4">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-serif text-[var(--forest-dark)] mb-6 leading-tight">
             {t('title')}
           </h2>
-          <p className="text-xl sm:text-2xl text-[var(--earth-amber)] font-light italic">
+          <p className="text-2xl sm:text-3xl text-[var(--charcoal)]/70 font-light max-w-3xl mx-auto">
             {t('subtitle')}
           </p>
         </div>
 
         {/* Tour Details Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {/* Duration */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition-shadow duration-300">
-            <div className="text-5xl mb-4">⏱️</div>
-            <h3 className="text-xl font-serif text-[var(--forest-dark)] mb-2">
+          <div className="bg-white p-10 rounded-3xl shadow-2xl text-center hover:shadow-3xl transition-all duration-300 hover:transform hover:scale-105">
+            <div className="text-6xl mb-6">⏱️</div>
+            <h3 className="text-2xl font-serif text-[var(--forest-dark)] mb-3 font-bold">
               {t('duration')}
             </h3>
-            <p className="text-[var(--charcoal)]">{t('durationValue')}</p>
+            <p className="text-lg text-[var(--charcoal)]">{t('durationValue')}</p>
           </div>
 
           {/* Departure */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition-shadow duration-300">
-            <div className="text-5xl mb-4">🚢</div>
-            <h3 className="text-xl font-serif text-[var(--forest-dark)] mb-2">
+          <div className="bg-white p-10 rounded-3xl shadow-2xl text-center hover:shadow-3xl transition-all duration-300 hover:transform hover:scale-105">
+            <div className="text-6xl mb-6">🚢</div>
+            <h3 className="text-2xl font-serif text-[var(--forest-dark)] mb-3 font-bold">
               {t('departure')}
             </h3>
-            <p className="text-[var(--charcoal)]">{t('departureValue')}</p>
+            <p className="text-lg text-[var(--charcoal)]">{t('departureValue')}</p>
           </div>
 
           {/* Schedule */}
-          <div className="bg-white p-8 rounded-xl shadow-lg text-center hover:shadow-2xl transition-shadow duration-300 md:col-span-2 lg:col-span-1">
-            <div className="text-5xl mb-4">📅</div>
-            <h3 className="text-xl font-serif text-[var(--forest-dark)] mb-2">
+          <div className="bg-white p-10 rounded-3xl shadow-2xl text-center hover:shadow-3xl transition-all duration-300 hover:transform hover:scale-105 md:col-span-2 lg:col-span-1">
+            <div className="text-6xl mb-6">📅</div>
+            <h3 className="text-2xl font-serif text-[var(--forest-dark)] mb-3 font-bold">
               {t('schedule')}
             </h3>
-            <p className="text-[var(--charcoal)]">{t('scheduleInfo')}</p>
+            <p className="text-lg text-[var(--charcoal)]">{t('scheduleInfo')}</p>
           </div>
         </div>
 
         {/* What's Included */}
-        <div className="bg-gradient-to-br from-[var(--forest-dark)] to-[var(--forest-medium)] p-8 md:p-12 rounded-2xl text-white">
-          <h3 className="text-3xl font-serif mb-8 text-center">
+        <div className="bg-gradient-to-br from-[var(--forest-dark)] to-[var(--forest-medium)] p-10 md:p-16 rounded-3xl text-white shadow-2xl">
+          <h3 className="text-4xl sm:text-5xl font-serif mb-12 text-center font-bold">
             {t('included')}
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {includedItems.map((item, index) => (
               <div key={index} className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
                   <svg
-                    className="w-6 h-6 text-[var(--earth-gold)]"
+                    className="w-7 h-7 text-[var(--earth-gold)]"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -71,7 +73,7 @@ export default function TourSection() {
                     />
                   </svg>
                 </div>
-                <p className="text-lg">{item}</p>
+                <p className="text-xl">{item}</p>
               </div>
             ))}
           </div>

@@ -19,45 +19,51 @@ export default function GallerySection() {
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-[var(--off-white)]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="gallery" className="py-24 bg-[var(--off-white)] relative overflow-hidden">
+      {/* Subtle misty atmosphere */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[var(--sage-mist)]/8 via-transparent to-[var(--sage-mist)]/8 pointer-events-none" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-[var(--forest-dark)] mb-4">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-serif text-[var(--forest-dark)] mb-6 leading-tight">
             {t('title')}
           </h2>
-          <p className="text-xl sm:text-2xl text-[var(--earth-amber)] font-light italic">
+          <p className="text-2xl sm:text-3xl text-[var(--charcoal)]/70 font-light max-w-3xl mx-auto">
             {t('subtitle')}
           </p>
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {galleryImages.map((image, index) => (
             <div
               key={index}
-              className="relative h-64 sm:h-72 lg:h-80 rounded-xl overflow-hidden shadow-lg cursor-pointer group"
+              className="relative h-72 sm:h-80 lg:h-96 rounded-3xl overflow-hidden shadow-2xl cursor-pointer group hover:shadow-3xl transition-all duration-300"
               onClick={() => setSelectedImage(index)}
             >
               <Image
                 src={image.src}
                 alt={image.alt}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                className="object-cover transition-transform duration-700 group-hover:scale-110"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
-              <div className="absolute inset-0 bg-[var(--forest-dark)]/0 group-hover:bg-[var(--forest-dark)]/30 transition-colors duration-300 flex items-center justify-center">
-                <svg
-                  className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
-                </svg>
+              <div className="absolute inset-0 bg-[var(--forest-dark)]/0 group-hover:bg-[var(--forest-dark)]/40 transition-colors duration-300 flex items-center justify-center">
+                <div className="transform scale-75 group-hover:scale-100 transition-transform duration-300">
+                  <div className="w-16 h-16 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <svg
+                      className="w-8 h-8 text-[var(--forest-dark)]"
+                      fill="none"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

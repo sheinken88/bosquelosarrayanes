@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useState, useEffect } from "react";
+import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navigation() {
-  const t = useTranslations('nav');
+  const t = useTranslations("nav");
   const locale = useLocale();
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,26 +17,26 @@ export default function Navigation() {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { key: 'home', href: `/${locale}#hero` },
-    { key: 'tour', href: `/${locale}#tour` },
-    { key: 'pricing', href: `/${locale}#pricing` },
-    { key: 'gallery', href: `/${locale}#gallery` },
-    { key: 'contact', href: `/${locale}#contact` },
+    { key: "home", href: `/${locale}#hero` },
+    { key: "tour", href: `/${locale}#tour` },
+    { key: "pricing", href: `/${locale}#pricing` },
+    { key: "gallery", href: `/${locale}#gallery` },
+    { key: "contact", href: `/${locale}#contact` },
   ];
 
   const languages = [
-    { code: 'es', name: 'ES' },
-    { code: 'en', name: 'EN' },
-    { code: 'pt', name: 'PT' },
+    { code: "es", name: "ES" },
+    { code: "en", name: "EN" },
+    { code: "pt", name: "PT" },
   ];
 
   const switchLocale = (newLocale: string) => {
-    const currentPath = pathname.replace(`/${locale}`, '');
+    const currentPath = pathname.replace(`/${locale}`, "");
     return `/${newLocale}${currentPath}`;
   };
 
@@ -44,15 +44,15 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled
-          ? 'bg-[var(--forest-dark)] shadow-lg'
-          : 'bg-[var(--forest-dark)]/30 backdrop-blur-sm'
+          ? "bg-gradient-to-b from-[var(--forest-dark)] via-[var(--forest-dark)] to-[var(--forest-dark)]/80 shadow-lg"
+          : "bg-gradient-to-b from-[var(--forest-dark)]/60 via-[var(--forest-dark)]/40 to-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href={`/${locale}`} className="flex items-center space-x-2">
-            <div className="text-2xl font-serif text-white font-bold">
+            <div className="text-2xl text-white font-light">
               Bosque de Arrayanes
             </div>
           </Link>
@@ -78,8 +78,8 @@ export default function Navigation() {
                 href={switchLocale(lang.code)}
                 className={`px-3 py-1 rounded text-sm font-medium transition-all duration-300 ${
                   locale === lang.code
-                    ? 'bg-[var(--earth-gold)] text-[var(--forest-dark)]'
-                    : 'text-white hover:bg-white/10'
+                    ? "bg-[var(--earth-gold)] text-[var(--forest-dark)]"
+                    : "text-white hover:bg-white/10"
                 }`}
               >
                 {lang.name}
@@ -133,8 +133,8 @@ export default function Navigation() {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`px-4 py-2 rounded text-sm font-medium transition-all duration-300 ${
                       locale === lang.code
-                        ? 'bg-[var(--earth-gold)] text-[var(--forest-dark)]'
-                        : 'bg-white/10 text-white'
+                        ? "bg-[var(--earth-gold)] text-[var(--forest-dark)]"
+                        : "bg-white/10 text-white"
                     }`}
                   >
                     {lang.name}

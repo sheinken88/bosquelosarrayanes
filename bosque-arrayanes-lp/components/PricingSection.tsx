@@ -1,118 +1,187 @@
-'use client';
+"use client";
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import StatsCard from "./StatsCard";
 
 export default function PricingSection() {
-  const t = useTranslations('pricing');
-
-  const pricingTiers = [
-    {
-      title: t('general'),
-      price: '$$$',
-      icon: '👤',
-    },
-    {
-      title: t('children'),
-      price: '$$',
-      icon: '👶',
-    },
-    {
-      title: t('seniors'),
-      price: '$$',
-      icon: '👴',
-    },
-  ];
+  const t = useTranslations("pricing");
 
   return (
-    <section id="pricing" className="py-20 bg-[var(--forest-dark)] text-white relative overflow-hidden">
+    <section
+      id="pricing"
+      className="py-24 bg-[var(--forest-dark)] text-white relative overflow-hidden"
+    >
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-1/3 h-full opacity-5">
-        <div className="text-[300px]">🌲</div>
+      <div className="absolute top-0 right-0 w-1/2 h-full opacity-5">
+        <div className="text-[400px]">🌲</div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-4">
-            {t('title')}
+        <div className="mb-20">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-serif mb-6 leading-tight max-w-4xl">
+            {t("title")}
           </h2>
-          <p className="text-xl sm:text-2xl text-[var(--earth-gold)] font-light italic">
-            {t('subtitle')}
+          <p className="text-2xl sm:text-3xl text-[var(--earth-gold)] font-light max-w-3xl">
+            {t("subtitle")}
           </p>
         </div>
 
-        {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {pricingTiers.map((tier, index) => (
-            <div
-              key={index}
-              className="bg-white/10 backdrop-blur-md p-8 rounded-2xl hover:bg-white/20 transition-all duration-300 hover:transform hover:scale-105 border border-white/20"
-            >
-              <div className="text-6xl mb-4 text-center">{tier.icon}</div>
-              <h3 className="text-2xl font-serif text-center mb-4">
-                {tier.title}
-              </h3>
-              <div className="text-4xl font-bold text-center mb-6 text-[var(--earth-gold)]">
-                {tier.price}
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* Modern Card Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {/* Large Featured Pricing Card - General */}
+          <div className="lg:col-span-2 relative h-[500px] rounded-3xl overflow-hidden shadow-2xl group">
+            <Image
+              src="https://blogdeviajes.com.ar/wp-content/uploads/arrayanes3.jpg"
+              alt="Bosque de Arrayanes Tour"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
+              sizes="(max-width: 1024px) 100vw, 66vw"
+            />
+            {/* Dark gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[var(--near-black)]/95 via-[var(--near-black)]/60 to-transparent" />
 
-        {/* Special Offers */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          {/* Infants */}
-          <div className="bg-[var(--earth-gold)] text-[var(--forest-dark)] p-6 rounded-xl flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <span className="text-4xl">🍼</span>
-              <div>
-                <h4 className="font-bold text-lg">{t('infants')}</h4>
-                <p className="text-sm">{t('infantsPrice')}</p>
+            {/* Content */}
+            <div className="absolute inset-0 flex flex-col justify-end p-10">
+              <div className="inline-block bg-[var(--earth-gold)] text-[var(--forest-dark)] px-4 py-2 rounded-full text-sm font-bold uppercase mb-6 w-fit">
+                {t("popular") || "Most Popular"}
+              </div>
+              <div className="flex items-end justify-between">
+                <div className="flex-1">
+                  <div className="text-6xl mb-4">👤</div>
+                  <h3 className="text-4xl sm:text-5xl font-serif font-bold mb-4">
+                    {t("general")}
+                  </h3>
+                  <p className="text-lg text-white/80 mb-4">
+                    {t("generalDesc") || "Full experience tour for adults"}
+                  </p>
+                </div>
+                <div className="text-right">
+                  <div className="text-6xl font-bold text-[var(--earth-gold)]">
+                    $$$
+                  </div>
+                  <p className="text-sm text-white/70 mt-2">
+                    {t("perPerson") || "Per Person"}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Groups */}
-          <div className="bg-[var(--earth-amber)] text-[var(--forest-dark)] p-6 rounded-xl flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <span className="text-4xl">👥</span>
-              <div>
-                <h4 className="font-bold text-lg">{t('groups')}</h4>
-                <p className="text-sm">{t('groupsInfo')}</p>
+          {/* Children Pricing Card */}
+          <div className="relative h-[240px] rounded-3xl overflow-hidden shadow-2xl group">
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-800" />
+            <Image
+              src="https://www.tangol.com/blog/Fotos/Galeria/bariloche_0_202011121114220.PNG"
+              alt="Children Tour"
+              fill
+              className="object-cover opacity-30 transition-transform duration-700 group-hover:scale-110"
+              sizes="(max-width: 1024px) 100vw, 33vw"
+            />
+            <div className="relative h-full flex flex-col justify-center items-center text-center p-8">
+              <div className="text-6xl mb-4">👶</div>
+              <h3 className="text-2xl font-serif font-bold mb-3">
+                {t("children")}
+              </h3>
+              <div className="text-5xl font-bold text-[var(--earth-gold)]">
+                $$
+              </div>
+              <p className="text-sm mt-2 text-white/80">
+                {t("childrenDesc") || "Ages 3-12"}
+              </p>
+            </div>
+          </div>
+
+          {/* Seniors Pricing Card */}
+          <div className="relative h-[240px] rounded-3xl overflow-hidden shadow-2xl group">
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800" />
+            <Image
+              src="https://blogdeviajes.com.ar/wp-content/uploads/arrayanes3.jpg"
+              alt="Seniors Tour"
+              fill
+              className="object-cover opacity-30 transition-transform duration-700 group-hover:scale-110"
+              sizes="(max-width: 1024px) 100vw, 33vw"
+            />
+            <div className="relative h-full flex flex-col justify-center items-center text-center p-8">
+              <div className="text-6xl mb-4">👴</div>
+              <h3 className="text-2xl font-serif font-bold mb-3">
+                {t("seniors")}
+              </h3>
+              <div className="text-5xl font-bold text-[var(--earth-gold)]">
+                $$
+              </div>
+              <p className="text-sm mt-2 text-white/80">
+                {t("seniorsDesc") || "65+ years"}
+              </p>
+            </div>
+          </div>
+
+          {/* Infants Card */}
+          <div className="relative h-[240px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-[var(--earth-gold)] to-[var(--earth-amber)]">
+            <div className="relative h-full flex items-center p-8 text-[var(--forest-dark)]">
+              <div className="text-6xl mr-6">🍼</div>
+              <div className="flex-1">
+                <h4 className="text-2xl font-bold mb-2">{t("infants")}</h4>
+                <p className="text-lg font-semibold">{t("infantsPrice")}</p>
+                <p className="text-sm mt-1 opacity-80">
+                  {t("infantsDesc") || "Under 3 years"}
+                </p>
               </div>
             </div>
+          </div>
+
+          {/* Groups Card */}
+          <div className="relative h-[240px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-[var(--earth-amber)] to-orange-600">
+            <div className="relative h-full flex items-center p-8 text-white">
+              <div className="text-6xl mr-6">👥</div>
+              <div className="flex-1">
+                <h4 className="text-2xl font-bold mb-2">{t("groups")}</h4>
+                <p className="text-lg font-semibold">{t("groupsInfo")}</p>
+                <p className="text-sm mt-1 opacity-90">
+                  {t("groupsDesc") || "10+ people"}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* What's Included Section */}
+        <div className="bg-white/5 backdrop-blur-md border border-white/10 p-10 rounded-3xl mb-12 shadow-2xl">
+          <h3 className="text-3xl font-serif font-bold mb-6 text-center">
+            {t("included") || "What's Included"}
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: "🚢", text: t("includeItem1") || "Catamaran Transport" },
+              { icon: "🎫", text: t("includeItem2") || "Park Entrance" },
+              { icon: "👨‍✈️", text: t("includeItem3") || "Expert Guide" },
+              { icon: "📸", text: t("includeItem4") || "Photo Opportunities" },
+              { icon: "🌳", text: t("includeItem5") || "Forest Walk" },
+              { icon: "☕", text: t("includeItem6") || "Refreshments" },
+            ].map((item, idx) => (
+              <div key={idx} className="flex items-center space-x-4">
+                <div className="text-3xl">{item.icon}</div>
+                <p className="text-lg">{item.text}</p>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Note */}
-        <div className="bg-white/5 border border-white/10 p-6 rounded-lg text-center mb-8">
-          <p className="text-white/80 italic">{t('note')}</p>
+        <div className="bg-white/5 border border-white/10 p-8 rounded-2xl text-center mb-12">
+          <p className="text-lg text-white/80 italic">{t("note")}</p>
         </div>
 
         {/* CTA Button */}
         <div className="text-center">
           <a
             href="#contact"
-            className="inline-block bg-[var(--earth-gold)] hover:bg-[var(--earth-amber)] text-[var(--forest-dark)] font-bold px-10 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="inline-block bg-[var(--earth-gold)] hover:bg-[var(--earth-sunset)] text-[var(--forest-dark)] font-bold px-12 py-5 rounded-xl text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl uppercase tracking-wide"
           >
-            {t('bookNow')}
+            {t("bookNow")}
           </a>
         </div>
-      </div>
-
-      {/* Wave transition */}
-      <div className="absolute bottom-0 left-0 w-full">
-        <svg
-          viewBox="0 0 1440 120"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-auto"
-        >
-          <path
-            d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,58.7C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
-            fill="var(--off-white)"
-          />
-        </svg>
       </div>
     </section>
   );

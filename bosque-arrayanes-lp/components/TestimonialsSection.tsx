@@ -1,45 +1,48 @@
-'use client';
+"use client";
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 
 export default function TestimonialsSection() {
-  const t = useTranslations('testimonials');
+  const t = useTranslations("testimonials");
 
   // Sample testimonials - replace with real ones
   const testimonials = [
     {
-      name: 'María González',
-      location: 'Buenos Aires, Argentina',
+      name: "María González",
+      location: "Buenos Aires, Argentina",
       rating: 5,
-      text: 'Una experiencia inolvidable. El bosque es mágico y el catamarán muy cómodo. Totalmente recomendable.',
-      avatar: '👩',
+      text: "Una experiencia inolvidable. El bosque es mágico y el catamarán muy cómodo. Totalmente recomendable.",
+      avatar: "👩",
     },
     {
-      name: 'John Smith',
-      location: 'New York, USA',
+      name: "John Smith",
+      location: "New York, USA",
       rating: 5,
-      text: 'Absolutely stunning! The forest is unique and the boat tour was perfect. Professional crew and beautiful scenery.',
-      avatar: '👨',
+      text: "Absolutely stunning! The forest is unique and the boat tour was perfect. Professional crew and beautiful scenery.",
+      avatar: "👨",
     },
     {
-      name: 'Ana Silva',
-      location: 'São Paulo, Brasil',
+      name: "Ana Silva",
+      location: "São Paulo, Brasil",
       rating: 5,
-      text: 'Maravilhoso! A floresta é única no mundo e vale muito a pena conhecer. O passeio de catamarã é muito agradável.',
-      avatar: '👩',
+      text: "Maravilhoso! A floresta é única no mundo e vale muito a pena conhecer. O passeio de catamarã é muito agradável.",
+      avatar: "👩",
     },
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-[var(--forest-dark)] text-white">
+    <section
+      id="testimonials"
+      className="py-20 bg-[var(--forest-dark)] text-white"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif mb-4">
-            {t('title')}
+            {t("title")}
           </h2>
           <p className="text-xl sm:text-2xl text-[var(--earth-gold)] font-light italic">
-            {t('subtitle')}
+            {t("subtitle")}
           </p>
         </div>
 
@@ -74,7 +77,9 @@ export default function TestimonialsSection() {
                 <div className="text-4xl">{testimonial.avatar}</div>
                 <div>
                   <p className="font-bold text-white">{testimonial.name}</p>
-                  <p className="text-sm text-white/70">{testimonial.location}</p>
+                  <p className="text-sm text-white/70">
+                    {testimonial.location}
+                  </p>
                 </div>
               </div>
             </div>
@@ -88,21 +93,6 @@ export default function TestimonialsSection() {
             <p className="text-white/80">Rated 5.0 on TripAdvisor</p>
           </div>
         </div>
-      </div>
-
-      {/* Wave transition */}
-      <div className="absolute bottom-0 left-0 w-full">
-        <svg
-          viewBox="0 0 1440 120"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-auto"
-        >
-          <path
-            d="M0,64L48,58.7C96,53,192,43,288,48C384,53,480,75,576,80C672,85,768,75,864,69.3C960,64,1056,64,1152,58.7C1248,53,1344,43,1392,37.3L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
-            fill="var(--off-white)"
-          />
-        </svg>
       </div>
     </section>
   );

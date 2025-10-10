@@ -1,48 +1,68 @@
 @import "tailwindcss";
 
 :root {
-  /* Deep teal/forest green - primary brand colors */
-  --forest-dark: #1a4d4d;
-  --forest-medium: #2d6a6a;
-  --forest-light: #3d7f7f;
-  --teal-primary: #2a5f5f;
+  /* Misty Forest - Primary colors */
+  --forest-dark: #0B3B2D; /* Dark forest green - deep, sophisticated */
+  --forest-medium: #1B4D3E; /* Medium pine green - for cards and containers */
+  --forest-light: #2d5a4d; /* Lighter pine - for gradients */
+  --teal-primary: #1B4D3E; /* Alias to forest-medium */
 
-  /* Warm earth tones - accents */
-  --earth-gold: #d4a574;
-  --earth-amber: #c89666;
-  --earth-sunset: #e0a96d;
+  /* Misty Forest - Accent colors (Arrayán bark inspired) */
+  --earth-gold: #B8855A; /* Cinnamon brown - like arrayán bark - primary accent */
+  --earth-amber: #C0905D; /* Medium cinnamon brown */
+  --earth-sunset: #C89A6B; /* Lighter cinnamon brown */
+  --moss-accent: #B8855A; /* Alias for clarity */
 
-  /* Neutrals */
-  --charcoal: #2c2c2c;
-  --near-black: #1a1a1a;
-  --off-white: #faf8f5;
-  --cream: #f5f3f0;
+  /* Misty Forest - Atmospheric/Mist colors */
+  --sage-mist: #A3B5AD; /* Sage gray-green - for overlays */
+  --sage-light: #c3d5cd; /* Lighter mist - for subtle backgrounds */
 
-  /* Backgrounds */
-  --background: var(--off-white);
-  --foreground: var(--charcoal);
+  /* Neutrals - Adjusted for darker theme */
+  --charcoal: #1a1a1a; /* Darker for better contrast */
+  --near-black: #0a0a0a; /* Even darker */
+  --off-white: #f5f8f6; /* Subtle green tint */
+  --cream: #e8ece9; /* Light sage */
+
+  /* Backgrounds - Dark forest theme */
+  --background: #0B3B2D; /* Dark forest green */
+  --foreground: #f5f8f6; /* Light text on dark background */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
+
+  /* Extended shadows for depth */
+  --shadow-3xl: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+  --shadow-4xl: 0 45px 80px -20px rgba(0, 0, 0, 0.4);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair), serif;
-  font-weight: 700;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Custom shadow utilities */
+.shadow-3xl {
+  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-4xl {
+  box-shadow: 0 45px 80px -20px rgba(0, 0, 0, 0.4);
+}
+
+.hover\:shadow-3xl:hover {
+  box-shadow: 0 35px 60px -15px rgba(0, 0, 0, 0.3);
 }
 
 /* Custom scrollbar for webkit browsers */
@@ -61,4 +81,16 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--forest-dark);
+}
+
+/* Smooth transitions for interactive elements */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better image rendering */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
