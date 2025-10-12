@@ -33,8 +33,9 @@ export default function Hero() {
               {/* Main Headline */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-[1.2] animate-fade-in font-light drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
                 Descubre un Bosque Único en el Mundo a bordo del{" "}
-                <span className="text-[var(--earth-gold)]">
+                <span className="text-[var(--earth-gold)] font-medium relative">
                   Catamarán Futaleufú
+                  <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[var(--earth-gold)]/30"></div>
                 </span>
               </h1>
 
