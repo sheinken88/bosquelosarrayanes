@@ -18,7 +18,29 @@
     "feature1": "Árboles centenarios de hasta 600 años",
     "feature2": "Corteza única de color canela",
     "feature3": "Ecosistema protegido como Monumento Natural",
-    "feature4": "Flora y fauna endémica de la región"
+    "feature4": "Flora y fauna endémica de la región",
+    "conservation": {
+      "eyebrow": "Nuestras Acciones",
+      "title": "Conservación Forestal",
+      "cards": {
+        "community": {
+          "title": "Guardianes Comunitarios",
+          "description": "Empoderando a los Locales para Proteger sus Bosques"
+        },
+        "reforestation": {
+          "title": "Revolución de Reforestación",
+          "description": "Plantando el futuro, Un Árbol a la Vez"
+        },
+        "deforestation": {
+          "title": "El Desafío de la Deforestación",
+          "description": "Visualizando el Impacto, Inspirando Acción"
+        },
+        "wildlife": {
+          "title": "Corredores de Vida Silvestre",
+          "description": "Conectando Hábitats, Salvando Especies"
+        }
+      }
+    }
   },
   "catamaran": {
     "title": "Catamarán Futaleufú",

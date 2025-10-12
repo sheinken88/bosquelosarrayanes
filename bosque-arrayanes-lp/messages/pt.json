@@ -18,7 +18,29 @@
     "feature1": "Árvores centenárias de até 600 anos",
     "feature2": "Casca única cor de canela",
     "feature3": "Ecossistema protegido como Monumento Natural",
-    "feature4": "Flora e fauna endêmica da região"
+    "feature4": "Flora e fauna endêmica da região",
+    "conservation": {
+      "eyebrow": "Nossas Ações",
+      "title": "Conservação Florestal",
+      "cards": {
+        "community": {
+          "title": "Guardians Comunitários",
+          "description": "Empoderando Locais para Proteger suas Florestas"
+        },
+        "reforestation": {
+          "title": "Revolução de Reflorestamento",
+          "description": "Plantando o futuro, Uma Árvore de Cada Vez"
+        },
+        "deforestation": {
+          "title": "O Desafio do Desmatamento",
+          "description": "Visualizando o Impacto, Inspirando Ação"
+        },
+        "wildlife": {
+          "title": "Corredores de Vida Silvestre",
+          "description": "Conectando Habitats, Salvando Espécies"
+        }
+      }
+    }
   },
   "catamaran": {
     "title": "Catamarã Futaleufú",

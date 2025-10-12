@@ -24,6 +24,11 @@ const nextConfig: NextConfig = {
         hostname: "blogdeviajes.com.ar",
         pathname: "/wp-content/uploads/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
     ],
   },
 };

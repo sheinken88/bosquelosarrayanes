@@ -18,7 +18,29 @@
     "feature1": "Centennial trees up to 600 years old",
     "feature2": "Unique cinnamon-colored bark",
     "feature3": "Protected ecosystem as a Natural Monument",
-    "feature4": "Endemic flora and fauna of the region"
+    "feature4": "Endemic flora and fauna of the region",
+    "conservation": {
+      "eyebrow": "Our Actions",
+      "title": "Forest Conservation",
+      "cards": {
+        "community": {
+          "title": "Community Guardians",
+          "description": "Empowering Locals to Protect Their Forests"
+        },
+        "reforestation": {
+          "title": "Reforestation Revolution",
+          "description": "Planting the future, One Tree at a Time"
+        },
+        "deforestation": {
+          "title": "The Deforestation Challenge",
+          "description": "Visualizing the Impact, Inspiring Action"
+        },
+        "wildlife": {
+          "title": "Wildlife Corridors",
+          "description": "Connecting Habitats, Saving Species"
+        }
+      }
+    }
   },
   "catamaran": {
     "title": "Futaleufú Catamaran",
