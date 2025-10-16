@@ -1,9 +1,14 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
-const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
+// Use absolute import path to avoid __dirname issues
+const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
+  // Disable Partial Prerendering to avoid Edge Runtime issues
+  experimental: {
+    ppr: false,
+  },
   images: {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],

@@ -1,6 +1,6 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest } from 'next/server';
-import { locales, defaultLocale } from './i18n/request';
+import { locales, defaultLocale } from './i18n';
 
 const intlMiddleware = createMiddleware({
   locales,
