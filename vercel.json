@@ -1,0 +1,7 @@
+{
+  "buildCommand": "cd bosque-arrayanes-lp && npm run build",
+  "outputDirectory": "bosque-arrayanes-lp/.next",
+  "installCommand": "cd bosque-arrayanes-lp && npm install",
+  "framework": "nextjs",
+  "devCommand": "cd bosque-arrayanes-lp && npm run dev"
+}
