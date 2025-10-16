@@ -2,36 +2,63 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function ForestSection() {
   const t = useTranslations("forest");
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    setIsPlaying(true);
+  };
 
   return (
     <section id="forest" className="relative overflow-hidden">
       {/* Full-bleed Hero Section with Video Background */}
       <div className="relative h-[70vh] min-h-[600px] w-full">
-        {/* Background Image/Video */}
-        <Image
-          src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
-          alt="Forest Conservation"
-          fill
-          className="object-cover"
-          sizes="100vw"
-          priority
-        />
+        {/* Video Background - Click to Play */}
+        <div className="absolute inset-0 w-full h-full">
+          {!isPlaying && (
+            <>
+              {/* Thumbnail Background */}
+              <img
+                src="https://img.youtube.com/vi/ZcQPZdNYkBI/maxresdefault.jpg"
+                alt="Forest Conservation Video Thumbnail"
+                className="absolute top-0 left-0 w-full h-full object-cover"
+              />
 
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50" />
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-black/50" />
 
-        {/* Centered Play Button */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 cursor-pointer">
-            <div className="w-0 h-0 border-t-10 border-t-transparent border-l-16 border-l-white border-b-10 border-b-transparent ml-1" />
-          </div>
+              {/* Centered Play Button */}
+              <button
+                onClick={handlePlay}
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+                         w-20 h-20 bg-white/20 hover:bg-white/30 rounded-full 
+                         flex items-center justify-center transition-all duration-300
+                         hover:scale-110 shadow-2xl backdrop-blur-sm"
+                aria-label="Play video"
+              >
+                {/* Play Icon */}
+                <div className="w-0 h-0 border-t-10 border-t-transparent border-l-16 border-l-white border-b-10 border-b-transparent ml-1" />
+              </button>
+            </>
+          )}
+
+          {isPlaying && (
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/ZcQPZdNYkBI?autoplay=1&rel=0&modestbranding=1&controls=0&showinfo=0&iv_load_policy=3&disablekb=1&fs=0&cc_load_policy=0"
+              title="Forest Conservation Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          )}
         </div>
 
         {/* Text Overlay - Lower Left Quadrant */}
-        <div className="absolute bottom-0 left-0 p-8 sm:p-12 lg:p-16 text-white max-w-2xl">
+        <div className="absolute bottom-8 left-8 text-white max-w-2xl">
           <div className="text-sm sm:text-base font-sans text-[var(--earth-gold)] uppercase tracking-wider mb-2">
             {t("conservation.eyebrow")}
           </div>
@@ -42,13 +69,13 @@ export default function ForestSection() {
       </div>
 
       {/* Card Grid Section */}
-      <div className="bg-[var(--near-black)] py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="bg-[var(--near-black)]">
+        <div className="w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
             {/* Community Guardians Card */}
-            <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl group cursor-pointer">
+            <div className="relative h-[300px] overflow-hidden group cursor-pointer">
               <Image
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="/images/forest1.png"
                 alt="Community Guardians"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -66,9 +93,9 @@ export default function ForestSection() {
             </div>
 
             {/* Reforestation Revolution Card - Highlighted */}
-            <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl group cursor-pointer">
+            <div className="relative h-[300px] overflow-hidden group cursor-pointer">
               <Image
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="/images/forest2.png"
                 alt="Reforestation Revolution"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -88,9 +115,9 @@ export default function ForestSection() {
             </div>
 
             {/* The Deforestation Challenge Card */}
-            <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl group cursor-pointer">
+            <div className="relative h-[300px] overflow-hidden group cursor-pointer">
               <Image
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="/images/forest3.png"
                 alt="The Deforestation Challenge"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -108,9 +135,9 @@ export default function ForestSection() {
             </div>
 
             {/* Wildlife Corridors Card */}
-            <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl group cursor-pointer">
+            <div className="relative h-[300px] overflow-hidden group cursor-pointer">
               <Image
-                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                src="/images/Forest4.png"
                 alt="Wildlife Corridors"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
